@@ -132,7 +132,6 @@ export default class Crud extends React.Component<ICrudProps, {}> {
 
   // Get all items
   private getAllItems = async () => {
-    console.log(sp.web.lists.getByTitle("EmployeeDetails").items.get());
     try {
       const items: any[] = await sp.web.lists
         .getByTitle("EmployeeDetails")

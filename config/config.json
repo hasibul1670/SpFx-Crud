@@ -9,10 +9,29 @@
           "manifest": "./src/webparts/crud/CrudWebPart.manifest.json"
         }
       ]
+    },
+    "chart-js-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/chartJs/ChartJsWebPart.js",
+          "manifest": "./src/webparts/chartJs/ChartJsWebPart.manifest.json"
+        }
+      ]
+    },
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "CrudWebPartStrings": "lib/webparts/crud/loc/{locale}.js"
+    "CrudWebPartStrings": "lib/webparts/crud/loc/{locale}.js",
+    "ChartJsWebPartStrings": "lib/webparts/chartJs/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js"
   }
 }
